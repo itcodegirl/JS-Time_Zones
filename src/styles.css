@@ -1,0 +1,35 @@
+body {
+	display: block;
+	background-color: #282c34;
+	color: #abb2bf;
+	justify-content: center;
+	align-items: center;
+	overflow-y: auto;
+	overflow-x: auto;
+	margin: 0 10px;
+}
+
+h1 {
+	font-family: "Sofia Sans Semi Condensed", sans-serif;
+	font-size: 35px;
+}
+
+h3 {
+	font-family: "Sofia Sans Semi Condensed", sans-serif;
+	font-size: 28px;
+}
+
+p {
+	font-family: "Sofia Sans Semi Condensed", sans-serif;
+	font-size: 20px;
+}
+
+ul,
+ol {
+	font-family: "Sofia Sans Semi Condensed", sans-serif;
+	font-size: 18px;
+}
+
+ul li {
+	margin-bottom: 8px;
+}
