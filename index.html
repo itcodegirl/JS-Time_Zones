@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>JS Time Zones</title>
+  </head>
+  <body>
+    <h1>JavaScript Time Zones</h1>
+
+    <p>
+      JavaScript provides a variety of ways to work with time zones, though by
+      default, the Date object is limited to handling the local time zone of the
+      environment in which it's executed. Here is a detailed explanation of how
+      JavaScript handles time zones, along with some methods and libraries that
+      help manage them.
+    </p>
+
+    <h2>1. JavaScript Date Object</h2>
+    <p>
+      The JavaScript Date object handles dates and times, but it is limited in
+      its ability to work directly with time zones. By default, the Date object
+      works with the local time zone of the user's environment.
+    </p>
+    <h3>Key Points:</h3>
+    <ul>
+      <li>
+        <strong>Local Time: `Date`</strong> objects use the local time of the
+        system where the code is running.
+      </li>
+      <li>
+        <strong>UTC:</strong> JavaScript can work with UTC (Coordinated
+        Universal Time) using methods like
+        <strong>`.getUTCDate()`, `.getUTCHours()`</strong>, etc.
+      </li>
+      <img src="/src/date_img12.png" alt="JavaScript Date Object Code" />
+    </ul>
+  </body>
+  <script src="/src/index.js"></script>
+</html>
