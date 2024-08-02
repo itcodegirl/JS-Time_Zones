@@ -7,6 +7,7 @@ body {
 	overflow-y: auto;
 	overflow-x: auto;
 	margin: 0 10px;
+	max-width: 90%;
 }
 
 h1 {
@@ -36,4 +37,9 @@ ul li {
 
 .baby-blue {
 	color: blueviolet;
+}
+
+img {
+	width: 80%;
+	height: auto;
 }
