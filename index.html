@@ -20,22 +20,49 @@
 
     <h2>1. JavaScript Date Object</h2>
     <p>
-      The JavaScript Date object handles dates and times, but it is limited in
-      its ability to work directly with time zones. By default, the Date object
-      works with the local time zone of the user's environment.
+      The JavaScript <strong class="baby-blue">`Date`</strong> object handles
+      dates and times, but it is limited in its ability to work directly with
+      time zones. By default, the
+      <strong class="baby-blue">`Date</strong> object works with the local time
+      zone of the user's environment.
     </p>
     <h3>Key Points:</h3>
     <ul>
       <li>
-        <strong>Local Time: `Date`</strong> objects use the local time of the
-        system where the code is running.
+        <strong class="baby-blue">Local Time: `Date`</strong> objects use the
+        local time of the system where the code is running.
       </li>
       <li>
-        <strong>UTC:</strong> JavaScript can work with UTC (Coordinated
-        Universal Time) using methods like
-        <strong>`.getUTCDate()`, `.getUTCHours()`</strong>, etc.
+        <strong class="baby-blue">UTC:</strong> JavaScript can work with UTC
+        (Coordinated Universal Time) using methods like
+        <strong class="baby-blue">`.getUTCDate()`, `.getUTCHours()`</strong>,
+        etc.
       </li>
+      <br />
+      <br />
       <img src="/src/date_img12.png" alt="JavaScript Date Object Code" />
+
+      <h2>2. Working with Time Zones</h2>
+      <p>
+        JavaScript does not have built-in support for time zones other than the
+        local time zone and UTC. To work with different time zones, you
+        typically need to use a library such as
+        <strong class="baby-blue">`moment-timezone`</strong> or the newer
+        <strong class="baby-blue"> Intl.DateTimeFormat </strong> API.
+        <br />
+        <br />
+        <strong class="baby-blue">Using Intl.DateTimeFormat</strong>
+        <br />
+        <br />
+        The <strong class="baby-blue">`Intl.DateTimeFormat`</strong> object can
+        format dates according to different locales and time zones.
+      </p>
+      <br />
+      <br />
+      <img
+        src="/src/date_img13.png"
+        alt="JavaScript Code for working with a timezone specifically Using Intl.DateTimeFormat"
+      />
     </ul>
   </body>
   <script src="/src/index.js"></script>
