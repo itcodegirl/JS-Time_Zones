@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>JS Time Zones</title>
   </head>
   <body>
-    <h1>JavaScript Time Zones</h1>
+    <h1>JavaScript Timezones</h1>
 
     <p>
       JavaScript provides a variety of ways to work with time zones, though by
@@ -64,6 +66,60 @@
       src="/src/date_img13.png"
       alt="JavaScript Code for working with a timezone specifically Using Intl.DateTimeFormat"
     />
+    <h2>3. Time Zone Offsets</h2>
+    <p>
+      You can manually calculate time zones by adding or subtracting the
+      appropriate number of hours to or from UTC. However, this approach is
+      error-prone, especially when accounting for daylight saving time.
+    </p>
+    <br />
+    <br />
+    <img
+      src="/src/date_img14.png"
+      alt="JavaScript Code for calculating time zone offsets"
+    />
+    <br />
+    <br />
+    <h2>4. Handling Daylight Saving Time</h2>
+    <p>
+      Daylight Saving Time (DST) complicates time zone calculations. JavaScript
+      doesn't automatically handle DST for non-local time zones, so using
+      libraries like <strong class="baby-blue">`moment-timezone</strong> is
+      essential to account for DST changes correctly.
+    </p>
+    <br />
+    <br />
+    <h2>New ECMAScript Features</h2>
+    <p>
+      In recent JavaScript updates, the Temporal API has been introduced
+      (currently at Stage 3 of the TC39 proposal), which provides better support
+      for time zones, DST, and precise time calculations.
+    </p>
+    <br />
+    <br />
+    <img
+      src="/src/date_img15.png"
+      alt="JavaScript Code for New ECMAScript Features temporal"
+    />
+    <br />
+    <br />
+    <h2></h2>
+    <p>
+      The Temporal API will provide a more robust and user-friendly way to work
+      with dates and times in JavaScript, including better support for time
+      zones and daylight saving time.
+    </p>
+
+    <h2>Conclusion</h2>
+    <p>
+      JavaScript's built-in <strong class="baby-blue">`Date`</strong> object is
+      limited in its ability to work with time zones. To work with time zones
+      effectively, you should use libraries like
+      <strong class="baby-blue">`moment-timezone`</strong> or the newer
+      <strong class="baby-blue">`Intl.DateTimeFormat`</strong> API. The Temporal
+      API, currently in development, will provide better support for time zones
+      and DST in future JavaScript versions.
+    </p>
   </body>
   <script src="/src/index.js"></script>
 </html>
