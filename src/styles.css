@@ -20,7 +20,8 @@ h3 {
 	font-size: 28px;
 }
 
-p {
+p,
+div {
 	font-family: "Sofia Sans Semi Condensed", sans-serif;
 	font-size: 20px;
 }
@@ -42,4 +43,14 @@ ul li {
 img {
 	width: 80%;
 	height: auto;
+}
+
+div {
+	color: black;
+	margin-bottom: 20px;
+	padding: 10px grey;
+	background-color: lightpink;
+	width: 80%;
+	height: auto;
+
 }
